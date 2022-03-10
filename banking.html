@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banking</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-3xl font-semibold text-center mt-5	
+        ">Let's get some<span class="font-bold text-blue-600"> Money </span></h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+        <!-- Balance and Transaction -->
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 text-white">
+
+                <div class="bg-green-300 p-8 rounded ">
+                    <h3 class="text-2xl">Deposit</h3>
+                    <!-- deposit input e value diya click korle akhaner deposit-total er $ sign ta kete jay. jeta akta problem -->
+                    <h4 class="text-4xl">$<span id="deposit-total">00</span> </h4>
+                </div>
+
+                <div class="bg-stone-400 p-8 rounded ">
+                    <h3 class="text-2xl">Withdraw</h3>
+                    <h4 class="text-4xl">$ <span id="withdraw-total">00</span></h4>
+                </div>
+
+                <div class="bg-blue-300 p-8 rounded ">
+                    <h3 class="text-2xl">Balance</h3>
+                    <h4 class="text-4xl">$ <span id="balance-total">1240</span></h4>
+                </div>
+
+            </div>
+        </section>
+        <!-- deposit and withdraw -->
+        <section class="mt-8 ">
+            <div class="grid grid-cols-2 gap-4">
+                <!-- deposit -->
+                <div class="bg-green-200 p-4 rounded">
+                    <h3 class="text-2xl">Please Deposit</h3>
+                    <div>
+                        <!-- Deposit input -->
+                        <input id="deposit-input" class=" block border border-gray-600 p-1 pl-2 rounded w-3/4 my-3"
+                            type="number" placeholder="$ amount you want to deposit">
+                        <!-- Deposit btn -->
+                        <button id="deposit-button"
+                            class="bg-blue-600 px-5 py-2 rounded font-medium text-white">Deposit</button>
+                    </div>
+                </div>
+                <!-- withdraw -->
+                <div class="bg-red-200 p-4 rounded">
+                    <h3 class="text-2xl">Please Withdraw</h3>
+                    <div>
+                        <!-- Deposit input -->
+                        <input id="withdraw-input" class=" block border border-gray-600 p-1 pl-2 rounded w-3/4 my-3"
+                            type="number" placeholder="$ amount you want to withdraw">
+                        <!-- Deposit btn -->
+                        <button id="withdraw-button"
+                            class="bg-blue-600 px-5 py-2 rounded font-medium text-white">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Add Javascipt file -->
+    <script src="js/banking.js"></script>
+</body>
+
+</html>

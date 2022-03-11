@@ -22,6 +22,11 @@ function updateTotalField(totalFieldId, amount) {
     //calculate
     totalElement.innerText = previousTotal + amount;
 }
+function getCurrentBalance() {
+    const balanceTotal = document.getElementById('balance-total');
+    const balanceTotalText = balanceTotal.innerText;
+    const previousBalanceTotal = parseFloat(balanceTotalText);
+}
 function updateBalance(amount, isAdd) {
     const balanceTotal = document.getElementById('balance-total');
     const balanceTotalText = balanceTotal.innerText;
